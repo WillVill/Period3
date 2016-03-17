@@ -1,0 +1,1 @@
+Explain generally what is meant by a NoSQL database
