@@ -40,9 +40,9 @@ db.inventory.insert(
 /*
 Read
 To read from the database you have to call the db then the .collection you want to access and then the command .find() or .findOne().
-*/
+
 db.collection.find({ <field>: <value> });
-/*
+
 Update
 To update data from the database you have to call the db then the .collection you want to access and then the command .update().
 The $set command is where you will update the information in a syntax of { $set: { <field1>: <value1>,<field2>: <value2> } }
@@ -106,7 +106,8 @@ Todo.remove({completed: true}, callback);
 /*
 Explain how redis "fits" into the NoSQL world, and provide an example of how to use it.
 
-Redis is a tool used to query to any type of database. It fits into the NoSQL world as Redis can create queries for document-oriented systems
+Redis is a database. It fits into the NoSQL world as Redis as it does not follow the SQL structure of
+realtional databases, it is a document-oriented system. Redis has its own built in persistence.
 
 
 Explain, using a relevant example, how redis (or a similar) can increase scalability (drastic) for a server using server side sessions 
